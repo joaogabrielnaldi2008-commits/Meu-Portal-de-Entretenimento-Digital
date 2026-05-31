@@ -1,0 +1,52 @@
+/* =====================================
+   ESTILO PRINCIPAL DO PORTAL
+===================================== */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Container Flexbox */
+.container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Cartões das seções */
+.card {
+    background-color: white;
+    width: 30%;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
+
+/* Classe para padronizar títulos */
+.titulo-secao {
+    color: #003366;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Classe para padronizar imagens */
+.imagem {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
